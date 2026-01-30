@@ -14,4 +14,5 @@ def market_buy(symbol, quantity):
 def market_sell(symbol, quantity):
     client = get_client()
     order = client.order_market_sell(symbol=symbol, quantity=quantity)
+
     return order
