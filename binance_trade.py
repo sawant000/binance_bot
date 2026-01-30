@@ -1,6 +1,5 @@
 from binance.client import Client
-from config import API_KEY, API_SECRET, USE_TESTNET
-
+from config import BINANCE_API_KEY, BINANCE_API_SECRET
 def get_client():
     client = Client(API_KEY, API_SECRET)
     if USE_TESTNET:
